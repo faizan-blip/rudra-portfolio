@@ -71,7 +71,7 @@ const Experience = () => {
               </motion.div>
             ))}
         </Stack>
-        <Stack flexDirection='column' alignItems='center' padding='4em 0' gap='2em' marginTop='1.7em'>
+        <Stack flexDirection='column' alignItems='center' padding='3em 0' gap='2em' marginTop='1.7em'>
         <motion.div initial="hidden" animate="visible" variants={fadeInLeft}>
           <Typography
             sx={{
