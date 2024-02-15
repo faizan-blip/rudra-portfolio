@@ -2,6 +2,7 @@
 
 import { Button, Stack, Typography } from "@mui/material";
 import {motion} from 'framer-motion'
+import { Suspense } from "react";
 const Experience = () => {
 
     const workdata = [
@@ -35,6 +36,7 @@ const Experience = () => {
     
     return ( 
         <>
+        <Suspense>
  <Stack
         flexDirection="column"
         gap="2em"
@@ -95,7 +97,7 @@ const Experience = () => {
         </Stack>
       </Stack>
         </Stack>
-
+        </Suspense>
         </>
     );
 }

@@ -3,7 +3,7 @@
 import { Box, Button, Drawer, IconButton, Stack, useTheme } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from "next/link";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "@/app/styles/Navbar.module.css";
@@ -27,6 +27,7 @@ const Navbar = () => {
 
   return (
     <>
+    <Suspense>
       <Stack flexDirection='row' justifyContent={{md:"space-evenly" , xs:"start"}} alignItems={{md:"center" , xs:"start"}} bgcolor='#161513' height='auto' padding='1em 1em' borderBottom='1px solid #1d1b1a'>
         <IconButton
           edge="start"
@@ -71,6 +72,7 @@ const Navbar = () => {
           <Button variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700", marginTop: "1.2em", display: { md: 'none', xs: 'block' } }}>Connect With Me</Button>
         </Stack>
       </Drawer>
+      </Suspense>
     </>
   );
 }

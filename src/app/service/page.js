@@ -4,6 +4,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import image from '/public/serviceposter.jpg'
 import { useRouter } from "next/navigation";
 import {motion} from 'framer-motion'
+import { Suspense } from "react";
 
 const Service = () => {
 
@@ -57,6 +58,7 @@ const Service = () => {
 
     return (  
         <>
+        <Suspense>
            <Stack
         flexDirection='column'
         gap="2em"
@@ -124,6 +126,7 @@ const Service = () => {
                }
             </Stack>
       </Stack>
+      </Suspense>
         </>
     );
 }

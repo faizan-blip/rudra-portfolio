@@ -3,9 +3,8 @@
 import { Avatar, Button, Divider, Stack, Typography } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import ArticleIcon from "@mui/icons-material/Article";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Aboutcompo from "../Components/Aboutcompo";
-
 const About = () => {
   const spring = {
     type: "spring",
@@ -42,6 +41,7 @@ const About = () => {
   }, []);
   return (
     <>
+    <Suspense>
       <Stack
   flexDirection={{md:"row" , xs:"column"}} justifyContent='space-evenly' alignItems={{md:"start" , xs:"center"}} padding={{md:"7em 0em" , sm:"1em 1em" , xs:"1em 1em"}} 
         gap="2em"
@@ -248,6 +248,7 @@ const About = () => {
       <Stack  bgcolor="#161513"  height='100%' padding='2em 0'>
 <Aboutcompo/>
       </Stack>
+      </Suspense>
     </>
   );
 };

@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from 'framer-motion';
+import { Suspense } from "react";
 const Index = () => {
     const spring = {
         type: 'spring',
@@ -56,6 +57,7 @@ const Index = () => {
     
     return (  
         <>
+        <Suspense>
         <Stack flexDirection={{md:"row" , xs:"column-reverse"}} justifyContent='center' alignItems={{md:"start" , xs:"center"}} padding={{md:"7em 0em" , sm:"1em 2em" , xs:"1em 1em"}} gap={{md:"0" , xs:"3em"}} sx={{bgcolor:"#161513" , height:"100%"}}>
         <Stack flexDirection='column' gap='1.7em' width={{md:"50%" , xs:"100%"}} padding={{md:"0" ,xs:"0 1em"}} >
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
@@ -137,6 +139,7 @@ const Index = () => {
     </motion.div>
             </Stack>
         </Stack>
+        </Suspense>
         </>
     );
 }

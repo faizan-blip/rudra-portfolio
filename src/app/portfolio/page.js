@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Box, Fab, Grid, IconButton, Stack, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Button, Tooltip } from "@mui/material";
 import Link from "next/link";
 import styles from '@/app/styles/Navbar.module.css';
@@ -462,6 +462,7 @@ const Portfolio = () => {
     
   return (
     <>
+    <Suspense>
       <Stack
         flexDirection="column"
         gap="2em"
@@ -537,6 +538,7 @@ const Portfolio = () => {
         {renderContent()}
       </Stack>
       </Stack>
+      </Suspense>
     </>
   );
 };
