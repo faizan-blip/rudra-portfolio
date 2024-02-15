@@ -46,7 +46,6 @@ const Aboutcompo = () => {
             </Typography>
           </motion.div>
           <Stack flexDirection={{lg:"row" , xs:"column"}} gap='1em' width={{md:"100%" , xs:"auto"}} justifyContent='space-evenly' alignItems='center' flexWrap={{lg:"nowrap" , xs:"wrap"}} padding='0em 0.5em'>
-          <motion.div key={id} initial="hidden" animate="visible" variants={fadeInLeft} >
            <Stack  width={{lg:"60%" , md:"70%" , sm:"80%" , xs:"auto"}}  className="border" flexDirection='column' borderColor='#fff' height='100%' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding={{sm:"1em 1em" , xs:"0.5em 0.5em"}} borderRadius='10px' gap='0.2em'>
      <Box component='img' src="/grad.jpg" sx={{width:"100%" , borderRadius:"7px"}}/>
      <Typography color='#f5f5f5' fontWeight='700' fontSize='18px' marginTop='1em'>Veer Surendra Sai University Of Technology</Typography>
@@ -55,7 +54,6 @@ const Aboutcompo = () => {
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2020-2024</Typography>
                   </Stack>
            </Stack>
-           </motion.div>
            <Stack flexDirection='column' gap='1em'  width={{lg:"40%" , md:"60%" , sm:"80%" , xs:"auto"}} minWidth="300px"height='100%'>
            <Stack width={{md:"100%" , xs:"auto"}}   className="border" flexDirection='column' borderColor='#fff' height='11.5em' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding='1.4em 1em' borderRadius='10px'>
            <Stack width='100%' height='80%'>
