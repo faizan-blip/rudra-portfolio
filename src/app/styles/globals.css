@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+*{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding:0 ;
+}
+.hover , .footer ,.hoverbut , .hoveri ,.border{
+  transition: 0.5s all ease;
+}
+.hover:hover{
+  transform: scale(0.9);
+}
+.footer:hover{
+  color: transparent!important;
+  background-image: linear-gradient(to right, #b16cea,#ff8a56) !important;
+  background-clip: text!important;
+}
+.hoverbut:hover{
+  border-radius: 10px!important;
+  border: none!important;
+  background: linear-gradient(to right, #b16cea,#ff8a56) !important;
+}
+.hoveri:hover{
+  background: linear-gradient(to right, #b16cea,#ff8a56) !important;
+}
+.border:hover{
+  border-color:#fff;
+}
