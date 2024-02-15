@@ -1,13 +1,13 @@
 "use client"
 
-import { Box, Button, Drawer, IconButton, Stack, useTheme } from "@mui/material";
+import { Box, Button, Divider, Drawer, IconButton, Stack, useTheme } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from "next/link";
 import { Suspense, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "@/app/styles/Navbar.module.css";
-
+import { HiArrowLongLeft } from "react-icons/hi2";
 const Navbar = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme(); // Import useTheme
@@ -59,19 +59,20 @@ const Navbar = () => {
      }
         >
           {/* Image */}
+          
           <Box component='img' src="/X.png" sx={{ width: "40px", marginTop: "1em" }} />
-
+<Divider sx={{borderColor:"1e1e1e" , width:"100%" , marginTop:"1em"}}/>
           {/* Connect Button */}
          
 
           {/* Links */}
-          <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em"  , marginTop:"1em"}} href='/'>Home</Link>
-          <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/about'>About</Link>
-          <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/service'>Service</Link>
-          <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/portfolio?cloud'>Portfolio</Link>
+          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em"  , marginTop:"1em"}} href='/'>Home</Link>
+          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/about'>About</Link>
+          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/service'>Service</Link>
+          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/portfolio?cloud'>Portfolio</Link>
           <ScrollLink to="connectSection" smooth={true} duration={500} spy={true} exact='true' offset={-70}>
-          <Button variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700" ,display:{md:"block" , xs:"none"}}}>Connect With Me</Button>
-        </ScrollLink>
+          <Button onClick={toggleDrawer(false)} variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700", marginTop: "1.2em", display: { md: 'none', xs: 'block' } }}>Connect With Me</Button>
+     </ScrollLink> 
         </Stack>
       </Drawer>
       </Suspense>
