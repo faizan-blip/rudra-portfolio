@@ -54,7 +54,7 @@ const Experience = () => {
             backgroundClip: "text",
           }}
           fontWeight="500"
-          fontSize={{lg:"40px",md:"35px" , sm:"35px" , xs:"30px"}}
+          fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
         >
           My Experience
         </Typography>
@@ -81,7 +81,7 @@ const Experience = () => {
               textAlign: "center"
             }}
             fontWeight="500"
-            fontSize={{lg:"40px",md:"35px" , sm:"35px" , xs:"30px"}}
+            fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
           >
             Companies <span style={{color:"#fff"}}>I've Worked With</span> 
           </Typography>

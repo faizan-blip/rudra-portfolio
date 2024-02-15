@@ -37,7 +37,7 @@ const Aboutcompo = () => {
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
-              fontSize="39px"
+              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
              sx={{ color: "transparent",
              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
              backgroundClip: "text"}}
@@ -86,7 +86,7 @@ const Aboutcompo = () => {
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
-              fontSize="39px"
+              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
              sx={{ color: "transparent",
              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
              backgroundClip: "text"}}
