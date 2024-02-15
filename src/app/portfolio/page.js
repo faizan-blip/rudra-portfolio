@@ -54,7 +54,7 @@ const Cloud = () => {
       flexDirection: "row",
       justifyContent:"space-between",
       alignItems: "flex-end",
-      width: {md:"40%" , xs:"auto"},
+      width: {md:"40%" , xs:"100%"},
       minWidth:"300px !important",
       padding: {sm:"1.5em 1.5em" , xs:"1em 1em"},
       overflow: 'hidden',
