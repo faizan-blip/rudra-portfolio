@@ -39,10 +39,10 @@ const Navbar = () => {
         </IconButton>
         <Box display={{md:"block" ,xs:"none"}} component='img' src="/X.png" sx={{ width: "40px" }} />
         <Stack display={{md:"flex" ,xs:"none"}}  flexDirection='row' justifyContent='center' gap='1.7em'>
-          <Link className={isSelected2 ? styles.selected : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/'>Home</Link>
-          <Link className={isSelected1 ? styles.selected : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/about'>About</Link>
-          <Link className={isSelected ? styles.selected : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/service'>Service</Link>
-          <Link className={isSelected0 ? styles.selected : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/portfolio?cloud'>Portfolio</Link>
+          <Link className={isSelected2 ? styles.selected1 : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/'>Home</Link>
+          <Link className={isSelected1 ? styles.selected1 : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/about'>About</Link>
+          <Link className={isSelected ? styles.selected1 : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/service'>Service</Link>
+          <Link className={isSelected0 ? styles.selected1 : styles.navLink} style={{ color: "#f5f5f5", textDecoration: "none" }} href='/portfolio?cloud'>Portfolio</Link>
         </Stack>
         <ScrollLink to="connectSection" smooth={true} duration={500} spy={true} exact='true' offset={-70}>
           <Button variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700" ,display:{md:"block" , xs:"none"}}}>Connect With Me</Button>
