@@ -9,7 +9,6 @@ import {AiOutlineLink ,AiOutlineDownload} from 'react-icons/ai'
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
-// import { useRouter } from 'next/navigation';
 import { useSearchParams ,usePathname} from 'next/navigation'
  
 const Cloud = () => {
