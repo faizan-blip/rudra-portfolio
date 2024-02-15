@@ -69,7 +69,9 @@ const Navbar = () => {
           <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/about'>About</Link>
           <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/service'>Service</Link>
           <Link  style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em" }} href='/portfolio?cloud'>Portfolio</Link>
-          <Button variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700", marginTop: "1.2em", display: { md: 'none', xs: 'block' } }}>Connect With Me</Button>
+          <ScrollLink to="connectSection" smooth={true} duration={500} spy={true} exact='true' offset={-70}>
+          <Button variant="contained" sx={{ textTransform: "none", background: "#fff !important", color: "#000", fontWeight: "700" ,display:{md:"block" , xs:"none"}}}>Connect With Me</Button>
+        </ScrollLink>
         </Stack>
       </Drawer>
       </Suspense>
