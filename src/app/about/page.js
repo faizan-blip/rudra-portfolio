@@ -106,7 +106,7 @@ const About = () => {
                     color="#d2d2d2"
                     fontWeight="400"
                     fontSize={{lg:"18px",md:"17px" , sm:"16px" , xs:"15px"}}
-                    width="80%"
+                    width={{sm:"80%" , xs:"100%"}}
                   >
                   
 Hello everyone,

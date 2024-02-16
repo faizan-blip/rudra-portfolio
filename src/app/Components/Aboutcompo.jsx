@@ -74,7 +74,7 @@ const Aboutcompo = () => {
              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
              backgroundClip: "text"}}
             >
-             Work <span style={{  fontWeight:"700"}}>Experince</span>
+             Work <span style={{  fontWeight:"700"}}>Experience</span>
             </Typography>
             <Stack 
   position='relative' 
