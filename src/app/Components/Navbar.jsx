@@ -62,14 +62,15 @@ const Navbar = () => {
      }
         >
           {/* Image */}
-          
-          <Box component='img' src="/X.png" sx={{ width: "40px", marginTop: "1em" }} />
+          <Stack flexDirection='column' maxHeight='4em' justifyContent='center' alignItems='center'>
+          <Box component='img' src="/favicon.png" sx={{ width: "100px", marginTop: "1em" }} />
+</Stack>
 <Divider sx={{borderColor:"1e1e1e" , width:"100%" , marginTop:"1em"}}/>
           {/* Connect Button */}
          
 
           {/* Links */}
-          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em"  , marginTop:"1em"}} href='/'>Home</Link>
+          <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none", padding: "1em"  }} href='/'>Home</Link>
           <Link onClick={toggleDrawer(false)}  style={{ color: "#f5f5f5", textDecoration: "none" ,padding: "1em"}} href='/about'>About</Link>
           <Link onClick={toggleDrawer(false)}  style={{ color: "#f5f5f5", textDecoration: "none" ,padding: "1em"}} href='/project'>Projects</Link>
           <Link onClick={toggleDrawer(false)} style={{ color: "#f5f5f5", textDecoration: "none" ,padding: "1em"}} href='/certification'>Certifications</Link>
