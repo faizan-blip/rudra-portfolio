@@ -4,7 +4,7 @@ import { Avatar, Box, Button, Fab, Stack, Typography } from "@mui/material";
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { Suspense } from "react";
 const Index = () => {
@@ -54,9 +54,20 @@ const Index = () => {
           width: '0%',
         },
       };
-    
+      const link1 = ()=>{
+        window.open('https://www.linkedin.com/in/rudramadhaba/', '_blank');
+    }
+    const link2 = ()=>{
+      window.open('https://twitter.com/rudramadhabami1', '_blank');
+  }
+
+  const link3 = ()=>{
+    window.open('https://github.com/RUDRAMADHABA', '_blank');
+}
+
     return (  
         <>
+          
         <Suspense>
         <Stack flexDirection={{md:"row" , xs:"column-reverse"}} justifyContent='center' alignItems={{md:"start" , xs:"center"}} padding={{md:"7em 0em" , sm:"1em 2em" , xs:"1em 1em"}} gap={{md:"0" , xs:"3em"}} sx={{bgcolor:"#161513" , height:"100%"}}>
         <Stack flexDirection='column' gap='1.7em' width={{md:"50%" , xs:"100%"}} padding={{md:"0" ,xs:"0 1em"}} >
@@ -84,18 +95,24 @@ const Index = () => {
       {/* Additional elements with animations */}
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <motion.div variants={typographyVariants}>
-        <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"15px" , xs:"14px"}}width="80%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?</Typography>
+        <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"15px" , xs:"14px"}}width="90%">
+        Hey everyone,
+I'm Rudramadhaba Mishra, a final-year BTech student majoring in Electronics and Telecommunication Engineering. I've interned as an SDE at multiple startups, actively contribute to open source and web development projects. I served as a Technical Team Member for Microsoft Learn Student Ambassador-SANINS and Idea Innovation Cell. As a founding member of GeeksforGeeks-Vssut chapter, I was a GFG campus ambassador for 2021-22. Looking for full-time software development opportunities in 2024.
+        </Typography>
       </motion.div>
 </motion.div>
       <Stack flexDirection='row' gap='0.5em' alignItems='center'>
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
         <motion.div variants={typographyVariants}>
-          <Button variant="contained" sx={{ background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important", borderRadius: "5px", gap: "0.5em", textTransform: "none" }}>Hire Me <TelegramIcon color="#fff" /></Button>
+          <Button onClick={() => {
+    const mailtoLink = 'mailto:rudramadhabamishra@gmail.com';
+    window.location.href = mailtoLink;
+  }} variant="contained" sx={{ background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important", borderRadius: "5px", gap: "0.5em", textTransform: "none" }}>Hire Me <TelegramIcon color="#fff" /></Button>
         </motion.div>
         </motion.div>
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
         <motion.div variants={typographyVariants}>
-          <Button variant="outlined" sx={{ border: "1px solid #ff8a56 !important", borderRadius: "5px", textTransform: "none", color: "#fff" }}>View Portfolio</Button>
+        <a href='/Resume.pdf' download> <Button variant="outlined" sx={{ border: "1px solid #ff8a56 !important", borderRadius: "5px", textTransform: "none", color: "#fff" }}>View Portfolio</Button></a>
         </motion.div>
         </motion.div>
       </Stack>
@@ -107,13 +124,13 @@ const Index = () => {
         <motion.div variants={containerVariants}>
           <Stack flexDirection='row' marginTop='0.5em' gap='0.5em' alignItems='start'>
             <motion.div variants={typographyVariants}>
-              <Fab sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><LinkedInIcon /></Fab>
+              <Fab onClick={()=> link1()} sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><LinkedInIcon size={30}/></Fab>
             </motion.div>
             <motion.div variants={typographyVariants}>
-              <Fab sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><TwitterIcon /></Fab>
+              <Fab onClick={()=> link2()} sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><TwitterIcon size={30}/></Fab>
             </motion.div>
             <motion.div variants={typographyVariants}>
-              <Fab sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><InstagramIcon /></Fab>
+              <Fab onClick={()=> link3()} sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><FaGithub size={30}/></Fab>
             </motion.div>
           </Stack>
         </motion.div>

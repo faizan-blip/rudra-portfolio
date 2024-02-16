@@ -108,9 +108,10 @@ const About = () => {
                     fontSize={{lg:"18px",md:"17px" , sm:"16px" , xs:"15px"}}
                     width="80%"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Temporibus assumenda nesciunt nobis quos, voluptate, laborum
-                    nulla consequuntur doloribus a explicabo reiciendis culpa, ?
+                  
+Hello everyone,
+
+I'm Rudramadhaba Mishra, a final-year BTech student in Electronics and Telecommunication Engineering at Veer Surendra Sai University of Technology, Burla. I have internship experience as an SDE in multiple startups and communities. Passionate about open source and web development, I've been a Technical Team Member of the Web Development domain in the Microsoft Learn Student Ambassador-SANINS community and Idea Innovation Cell. I'm a founding and core team member of GeeksforGeeks-Vssut chapter, also serving as a GFG campus ambassador for 2021-22. Currently seeking full-time opportunities in Software Development for 2024.
                   </Typography>
                 </motion.div>
               )}
@@ -142,7 +143,7 @@ const About = () => {
                           fontWeight='700'
                           fontSize={{lg:"30px", md:"29px" , sm:"25px" , xs:"23px"}}
                         >
-                          10 +
+                          2 +
                         </Typography>
                         <Typography
                           color='#d2d2d2'
@@ -173,7 +174,7 @@ const About = () => {
                           fontWeight='700'
                           fontSize={{lg:"30px", md:"29px" , sm:"25px" , xs:"23px"}}
                         >
-                          120 +
+                          15 +
                         </Typography>
                         <Typography
                           color='#d2d2d2'
@@ -203,7 +204,7 @@ const About = () => {
                         fontWeight='700'
                         fontSize={{lg:"30px", md:"29px" , sm:"25px" , xs:"23px"}}
                       >
-                        60 +
+                        50 +
                       </Typography>
                       <Typography
                         color='#d2d2d2'
@@ -211,7 +212,7 @@ const About = () => {
                         fontSize='15px'
                         width="100%"
                       >
-                        Global Customers
+                        Clients Worked with
                       </Typography>
                     </Stack>
                   </motion.div>
@@ -228,7 +229,7 @@ const About = () => {
         exit={{ y: -20, opacity: 0 }}
         transition={{ ...spring, duration: 1 }}
       >
-        <Button
+     <a href='/Resume.pdf' download><Button
           variant="contained"
           sx={{
             background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important",
@@ -239,7 +240,7 @@ const About = () => {
           }}
         >
           Download CV <ArticleIcon color="#fff" />
-        </Button>
+        </Button></a>
       </motion.div>
     )}
   </AnimatePresence>

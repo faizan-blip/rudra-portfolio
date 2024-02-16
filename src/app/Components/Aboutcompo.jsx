@@ -13,9 +13,9 @@ const Aboutcompo = () => {
     { name: "MIT", position: "Frontend Developer", year: "2017-2019" }
   ];
   const workdata = [
-    { name: "Apple", position: "Full Stack Web Developer", year: "2021-2024" },
-    { name: "IserVu", position: "Software Engineer", year: "2019-2021" },
-    { name: "Twitter", position: "Frontend Developer", year: "2017-2019" }
+    { name: "iServeU", position: "Software Development Engineer Intern", year: "Dec 2023 - June2024" },
+    { name: "Param.ai", position: "Software Development Engineer Intern", year: "Nov 2023 - Dec 2023" },
+    { name: "IG Drones", position: "Software Development Engineer Intern", year: "April 2023 - July 2023" }
   ];
 
   
@@ -33,7 +33,7 @@ const Aboutcompo = () => {
   return (
     <>
       <Stack flexDirection='column' justifyContent='center' alignItems='center' gap='5em'>
-      <Stack flexDirection='column' gap='2em' width={{md:"60%" , xs:"auto"}} alignItems='center' justifyContent='center' padding='0 0em'>
+      <Stack flexDirection='column' gap='2.7em' width={{md:"75%" , xs:"auto"}} alignItems='center' justifyContent='center' padding='0 0em'>
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
@@ -47,42 +47,25 @@ const Aboutcompo = () => {
           </motion.div>
           <Stack flexDirection={{lg:"row" , xs:"column"}} gap='1em' width={{md:"100%" , xs:"auto"}} justifyContent='space-evenly' alignItems='center' flexWrap={{lg:"nowrap" , xs:"wrap"}} padding='0em 0.5em'>
            <Stack  width={{lg:"60%" , md:"70%" , sm:"80%" , xs:"auto"}}  className="border" flexDirection='column' borderColor='#fff' height='100%' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding={{sm:"1em 1em" , xs:"0.5em 0.5em"}} borderRadius='10px' gap='0.2em'>
-     <Box component='img' src="/grad.jpg" sx={{width:"100%" , borderRadius:"7px"}}/>
-     <Typography color='#f5f5f5' fontWeight='700' fontSize='18px' marginTop='1em'>Veer Surendra Sai University Of Technology</Typography>
+     <Box component='img' src="/vssut.jpg" sx={{width:"100%", height:{sm:"350px" , xs:"100%"}, borderRadius:"7px"}}/>
+     <Typography color='#f5f5f5' fontWeight='700' fontSize='17px' marginTop='1em'>Veer Surendra Sai University Of Technology-(Burla,India)</Typography>
                   <Stack flexDirection='row' justifyContent='space-between'>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>Electronics and Telecommunication</Typography>
+                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>BTech in Electronics and Telecommunication Engineering</Typography>
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2020-2024</Typography>
                   </Stack>
            </Stack>
-           <Stack flexDirection='column' gap='1em'  width={{lg:"40%" , md:"60%" , sm:"80%" , xs:"auto"}} minWidth="300px"height='100%'>
-           <Stack width={{md:"100%" , xs:"auto"}}   className="border" flexDirection='column' borderColor='#fff' height='11.5em' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding='1.4em 1em' borderRadius='10px'>
-           <Stack width='100%' height='80%'>
-           <Box component='img' src="/grad.jpg" sx={{width:"100%", height:"100%" , borderRadius:"7px"}}/>
+           
+           <Stack  width={{lg:"60%" , md:"70%" , sm:"80%" , xs:"auto"}}  className="border" flexDirection='column' borderColor='#fff' height='100%' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding={{sm:"1em 1em" , xs:"0.5em 0.5em"}} borderRadius='10px' gap='0.2em'>
+     <Box component='img' src="/bjem.jpg" sx={{width:"100%", height:{sm:"350px" , xs:"300px"}, borderRadius:"7px"}}/>
+     <Typography color='#f5f5f5' fontWeight='700' fontSize='17px' marginTop='1em'>Buxi Jagabandhu English Medium School-(Bhubaneswar, India)</Typography>
+                  <Stack flexDirection='row' justifyContent='space-between'>
+                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>Intermediate Education in Science</Typography>
+                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2020-2024</Typography>
+                  </Stack>
            </Stack>
-           <Stack flexDirection='column' width='auto' height='20%'>
-     <Typography color='#f5f5f5' fontWeight='700' fontSize='18px' marginTop='0.4em'>St Paul's</Typography>
-                  <Stack flexDirection='row' justifyContent='space-between' gap='1em'>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>PCMB</Typography>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2018-2020</Typography>
-                  </Stack>
-                  </Stack>
-</Stack>
-<Stack width={{md:"100%" , xs:"auto"}}   className="border" flexDirection='column' borderColor='#fff' minWidth="300px" height='11.5em' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding='1.4em 1em' borderRadius='10px'>
-           <Stack width={{md:"100%" , xs:"auto"}} height='80%'>
-           <Box component='img' src="/grad.jpg" sx={{width:"100%", height:"100%" , borderRadius:"7px"}}/>
-           </Stack>
-           <Stack flexDirection='column' width='100%' height='20%'>
-     <Typography color='#f5f5f5' fontWeight='700' fontSize='18px' marginTop='0.4em'>St Paul's</Typography>
-                  <Stack flexDirection='row' justifyContent='space-between' gap='1em'>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>PCMB</Typography>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2018-2020</Typography>
-                  </Stack>
-                  </Stack>
-</Stack>
-            </Stack>
           </Stack>
         </Stack>
-        <Stack flexDirection={{md:"row" , xs:"column"}} gap={{xl:"20em",lg:"10em" , md:"10em" , sm:"2em" ,xs:"2em" }} width={{md:"55%" , xs:"auto"}} justifyContent='space-between'>
+        <Stack flexDirection={{md:"row" , xs:"column"}} gap={{xl:"20em",lg:"10em" , md:"10em" , sm:"2em" ,xs:"2em" }} width={{md:"55%" , xs:"auto"}} justifyContent='space-between' padding='0 1em'>
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
