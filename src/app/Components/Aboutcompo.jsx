@@ -28,7 +28,20 @@ const Aboutcompo = () => {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { delay: 2 } },
   };
-
+  const compnydata = [
+   
+    { name:"/nextjs.svg" },
+    { name:"/nodejs.svg" },
+    { name:"/expresss.svg" },
+    { name:"/react.svg" },
+    { name:"/javascript.svg" },
+    { name:"/kubernate.svg" },
+    { name:"/Docker.svg" },
+    { name:"/gcp.svg" },
+   
+    { name:"/ama.svg" },
+    { name:"/istio.jpeg" }
+  ];
   const route = useRouter()
   return (
     <>
@@ -37,7 +50,7 @@ const Aboutcompo = () => {
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
-              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
+              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"37px"}}
              sx={{ color: "transparent",
              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
              backgroundClip: "text"}}
@@ -69,7 +82,7 @@ const Aboutcompo = () => {
           <motion.div initial="hidden" animate="visible" variants={educationAnimation} style={{display:"flex" , flexDirection:"column" , gap:"1em"}}>
             <Typography
               fontWeight="500"
-              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
+              fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"37px"}}
              sx={{ color: "transparent",
              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
              backgroundClip: "text"}}
@@ -118,6 +131,31 @@ const Aboutcompo = () => {
             ))}
           </Stack>
         </Stack>
+        <Stack flexDirection='column' alignItems='center' gap='2em'>
+        <motion.div initial="hidden" animate="visible" variants={fadeInLeft}>
+          <Typography
+            sx={{
+              color: "transparent",
+              backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
+              backgroundClip: "text",
+              textAlign: "center"
+            }}
+            fontWeight="500"
+            fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"37px"}}
+          >
+            Skills
+          </Typography>
+        </motion.div>
+        <Stack flexDirection='row' width={{md:"60%" , xs:"100%"}} justifyContent='center' gap='1.5em' flexWrap='wrap'>
+          {compnydata.map((data, id) => (
+            <motion.div key={id} initial="hidden" animate="visible" variants={fadeInLeft} style={{display:"flex" , gap:"1em"}}>
+              <Button variant="contained" sx={{textTransform:"none", background:"#f5f5f5 !important", border:"3px solid", borderImageSource:"linear-gradient(to right, #b16cea,#ff8a56)", borderImageSlice:"1",backdropFilter:"blur(16px) saturate(180%)", color:"#fff" , fontWeight:"700" , maxWidth:"150px" , maxHeight:"100px"}}>
+<Box component='img' src={data.name} sx={{width:"50%"}}/>
+              </Button>
+            </motion.div>
+          ))}
+        </Stack>
+      </Stack>
       </Stack>
     </>
   );

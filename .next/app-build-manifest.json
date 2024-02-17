@@ -11,25 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/certification/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/certification/page.js"
+      "static/chunks/app/about/page.js"
     ],
     "/project/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/project/page.js"
     ],
-    "/about/page": [
+    "/certification/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
-    ],
-    "/about/experience/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/experience/page.js"
+      "static/chunks/app/certification/page.js"
     ],
     "/extra/page": [
       "static/chunks/webpack.js",

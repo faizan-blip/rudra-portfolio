@@ -220,7 +220,7 @@ const fadeInLeft = {
             backgroundClip: "text",
           }}
           fontWeight="500"
-          fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
+          fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"37px"}}
         >
           Extra Curricular
         </Typography>

@@ -1,7 +1,7 @@
 {
-  "/about/experience/page": "app/about/experience/page.js",
+  "/project/page": "app/project/page.js",
   "/extra/page": "app/extra/page.js",
   "/page": "app/page.js",
-  "/certification/page": "app/certification/page.js",
-  "/project/page": "app/project/page.js"
+  "/about/page": "app/about/page.js",
+  "/certification/page": "app/certification/page.js"
 }

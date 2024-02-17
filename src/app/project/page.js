@@ -12,29 +12,76 @@ import { FaFigma } from "react-icons/fa";
  
 const Cloud = () => {
     const alldata = [
-      { heading: "App", name: "Crypto App design", redirect: <GoArrowUpRight fontSize={35} />, img: `/serviceposter.jpg` },
-      { heading: "Website Design", name: "Crypto App design", redirect: <GoArrowUpRight fontSize={35} />, img: `/serviceposter.jpg` },
-      { heading: "Ui design", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg` },
-      { heading: "App", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg` },
-      { heading: "Website Design", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg` },
-      { heading: "Ui design", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg` },
+      { heading: "Graduate Us", name: "Web Development", redirect: <GoArrowUpRight fontSize={35} />, img: `/gd.png` , link:"https://www.graduateus.com" ,tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "FIRSTCARE", name: "Web Development", redirect: <GoArrowUpRight fontSize={35} />, img: `/first.png`, link:"https://firstcareshop.com/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?" },
+      { heading: "0xgasless", name: "Web Development", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/ox.png` , link:"https://0xgasless.vercel.app/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "Pink Surfing", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/pink.png` , link:"https://pink-surfing-r2i4.vercel.app/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "Super kid", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg`, link:"https://superkid.co.in/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ), detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "TaskLabs", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/bot.png`, link:"https://taskbot-platform-deploy.vercel.app/" ,tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "Amlajan", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/jolly.png`, link:"https://jolly-fermi-aa4a4f.netlify.app/" ,tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "DevFest Bhubaneswar 2023", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/dev.png` ,link:"https://devfest.gdgbbsr.in/" ,tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
     ];
 
     
 
-   
-    const [selectedData, setSelectedData] = useState(null);
-    
-    const handleFabClick = (data) => {
-      setSelectedData(data);
+    const [selectedDataId, setSelectedDataId] = useState(null);
+
+    const handleFabClick = (id) => {
+      setSelectedDataId(id);
     };
-
-
   
     const handleCloseDialog = () => {
-      setSelectedData(null);
+      setSelectedDataId(null);
     };
-
+  
 
   
   
@@ -48,7 +95,9 @@ const Cloud = () => {
       height: id % 2 === 0 ? "15em" : "18em",
       backgroundImage: `url(${data.img})`,
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundColor:"#000",
+      backgroundSize: "100% 100%",
+      backgroundPosition:"center",
       display: "flex",
       flexDirection: "row",
       justifyContent:"space-between",
@@ -63,7 +112,7 @@ const Cloud = () => {
         bottom: 0,
         left: 0,
         width: '100%',
-        height: '40%',  // Adjust the height of the shadow overlay as needed
+        height: '60%',  // Adjust the height of the shadow overlay as needed
         background: 'linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))',
       }
     }}>
@@ -73,22 +122,22 @@ const Cloud = () => {
           backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
           backgroundClip: "text",
           fontWeight: "700",
-          fontSize: "18px",
+          fontSize: "19px",
           zIndex:"2"
         }}>
           • {data.heading}
         </Typography>
         <Typography sx={{ 
-          color:"#fff",
+          color:"#d2d2d2",
           fontWeight: "700",
-          fontSize: "19px",
+          fontSize: "16px",
           zIndex:"2"
         }}>
           {data.name}
         </Typography>
       </Stack>
-<Fab className='hoveri' sx={{transform:"scale(0.5)" , background:"#fff !important"}}onClick={() => handleFabClick(data)}>{data.redirect}</Fab>
-<Dialog open={selectedData !== null} onClose={handleCloseDialog} PaperProps={{sx:{background:"#161513"}}}>
+<Fab className='hoveri' sx={{transform:"scale(0.5)" , background:"#fff !important"}}onClick={() => handleFabClick(id)}>{data.redirect}</Fab>
+<Dialog open={selectedDataId === id}  onClose={handleCloseDialog} PaperProps={{sx:{background:"#161513"}}}>
 <DialogContent>
             <Box component='img' src={data.img} sx={{ width: "100%" , borderRadius:"10px" }} />
             <Box sx={{display:"flex" , flexDirection:"column" , gap:"0.7em" , marginTop:"0.8em" , width:"100%"}}>
@@ -97,15 +146,12 @@ const Cloud = () => {
           backgroundClip: "text",
           fontWeight: "700",
           flexDirection:"row" , alignItems:"center" , gap:"0em",
-          fontSize: "20px"}}>{data.name} <Tooltip placement='bottom' title='Portfolio' >
-         <Fab className='hoveri' sx={{transform:"scale(0.5)" , background:"#fff !important"}}><AiOutlineLink fontSize={35} color='#161513' onClick={()=>{
-          const href = `#`
-          window.location.href = href;
-          }}/></Fab>
+          fontSize: "20px"}}>{data.heading} <Tooltip placement='bottom' title={data.heading} >
+      <a href={data.link}><Fab className='hoveri' sx={{transform:"scale(0.5)" , background:"#fff !important"}}><AiOutlineLink fontSize={35} color='#161513' /></Fab></a>   
           </Tooltip></Typography>
-            <Typography sx={{display:"flex" , width:"100%" , fontWeight:"700"  , color:"#fff", flexDirection:"row" , alignItems:"start" , gap:"0.5em" }}>Tech Stack: <span><TbBrandNextjs fontSize={25}/> <FaNodeJs fontSize={25}/> <FaFigma fontSize={25}/></span> </Typography>
+            <Typography sx={{display:"flex" , width:"100%" , fontWeight:"700"  , color:"#fff", flexDirection:"row" , alignItems:"start" , gap:"0.5em" }}>Tech Stack: <span>{data.tech}</span> </Typography>
             <Typography sx={{display:"flex" , width:"100%" , color:"#fff" ,fontWeight:"700" , flexDirection:"row" , alignItems:"start" , gap:"0.5em" }}>Description: <span style={{fontSize:"16px" , fontWeight:"500"}}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?</span></Typography>
+           {data.detail}</span></Typography>
             </Box>
           </DialogContent>
           <DialogActions>
@@ -146,7 +192,7 @@ const Portfolio = () => {
             backgroundClip: "text",
           }}
           fontWeight="500"
-          fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"30px"}}
+          fontSize={{lg:"39px",md:"35px" , sm:"35px" , xs:"37px"}}
         >
           My Projects
         </Typography>
