@@ -6,6 +6,109 @@ const Extra = () => {
 
 const data = [
   {
+    "position": "AWS Educate Student",
+    "company": "AWS Educate Student Community India",
+    "duration": "Jul 2021 - May 2022 ",
+    "responsibilities": [
+      "Learned and contributed in the AWS community."
+    ]
+  },
+  {
+    "position": "Core Technical Team Member",
+    "company": "GeeksForGeeks VSSUT",
+    "duration": "Nov 2021 - Oct 2023",
+    "responsibilities": [
+      "Worked as a Core Tech Team member and a founding member of GFG VSSUT."
+    ]
+  },
+  {
+    "position": "Campus Ambassador",
+    "company": "Dell Technologies",
+    "duration": "Oct 2021 - Apr 2022 ",
+    "responsibilities": [
+      "Campus Ambassador of Dell Technologies."
+    ]
+  },
+  {
+    "position": "Core Techno-Management Member",
+    "oldposition": "Community Member",
+    "company": "GDG Cloud Bhubaneswar",
+    "duration": "Jul 2023 - Present",
+    "oldduration": "Nov 2021 - Jul 2023",
+    "responsibilities": [
+      "Developed GDG BBSR Website and Devfest 2023 website.",
+      "Serving as a Core Management Member.",
+      "Full Stack Web Developer for GDG BBSR events."
+    ],
+    "oldresponsibilities": [
+      "Active community member.",
+      "Participated in all GDG events."
+    ]
+  },
+  {
+    "position": "Community Member",
+    "company": "Google Developer Student Clubs - VSSUT, Burla",
+    "duration": "Dec 2020 - Jul 2023",
+    "responsibilities": [
+      "Active community member in Developer Students Club VSSUT, Burla."
+    ]
+  },
+  
+  
+  {
+    "position": "Open Source Contributor",
+    "company": "GirlScript Summer of Code",
+    "duration": "Mar 2022 - May 2022",
+    "responsibilities": [
+      "Contributed as an open source contributor for GSSOC'22."
+    ]
+  },
+  {
+  "position": "Open Source Contributor",
+    "company": "GirlScript Winter of Contributing",
+    "duration": "Aug 2021 - Nov 2021 ",
+    "responsibilities": [
+      "GWOC'21 in Web development domain."
+    ]
+  },{
+    "position": "Ninja Entrepreneur",
+    "company": "Coding Ninjas",
+    "duration": "Aug 2021 - Jan 2022 ",
+    "responsibilities": [
+      "Campus Ambassador representing Coding Ninjas."
+    ]
+  },
+  {
+    "position": "Coding Team Lead",
+    "company": "Idea and Innovation Cell, VSSUT, Burla",
+    "duration": "Apr 2023 - Dec 2023",
+    "responsibilities": [
+      "Managed and handled different coding projects and web app development."
+    ],
+    "oldposition": "Core Technical Team Member",
+    "oldduration": "Jul 2022 - Jul 2023 ",
+    "oldresponsibilities": [
+      "Worked as a Core Technical Team Member in CS-Electronics domain.",
+      "Helped in development of the overall official IIC website."
+    ],
+    "oldposition1": "Technical Team Member",
+    "oldduration1": "May 2021 - Jul 2022 ",
+    "oldresponsibilities1": [
+      "Core Tech Team Member."
+    ]
+  },
+  
+  {
+    "position": "Core Technical Team Member",
+    "company": "ISRO VSSUT Space Innovation Centre",
+    "duration": "Aug 2022 - Dec 2023 ",
+    "responsibilities": [
+      "Worked in core electronics team and aviation.",
+      "Handled the website of VSSSIC using MERN stack.",
+      "Worked on Integration of software with IoT."
+    ]
+  },
+  {
     "position": "Campus Ambassador",
     "company": "Belong Education",
     "duration": "Feb 2021 - Feb 2021",
@@ -60,53 +163,7 @@ const data = [
       "Intern at IT department of YIF Burla Chapter."
     ]
   },
- 
-  
-    {
-    "position": "Open Source Contributor",
-    "company": "GirlScript Summer of Code",
-    "duration": "Mar 2022 - May 2022",
-    "responsibilities": [
-      "Contributed as an open source contributor for GSSOC'22."
-    ]
-  }, {
-    "position": "Ninja Entrepreneur",
-    "company": "Coding Ninjas",
-    "duration": "Aug 2021 - Jan 2022 ",
-    "responsibilities": [
-      "Campus Ambassador representing Coding Ninjas."
-    ]
-  }, {
-    "position": "Campus Ambassador",
-    "company": "Dell Technologies",
-    "duration": "Oct 2021 - Apr 2022 ",
-    "responsibilities": [
-      "Campus Ambassador of Dell Technologies."
-    ]
-  },{
-    "position": "Core Technical Team Member",
-    "company": "GeeksForGeeks VSSUT",
-    "duration": "Nov 2021 - Oct 2023",
-    "responsibilities": [
-      "Worked as a Core Tech Team member and a founding member of GFG VSSUT."
-    ]
-  }, {
-    "position": "AWS Educate Student",
-    "company": "AWS Educate Student Community India",
-    "duration": "Jul 2021 - May 2022 ",
-    "responsibilities": [
-      "Learned and contributed in the AWS community."
-    ]
-  },
-  
-  {
-    "position": "Open Source Contributor",
-    "company": "GirlScript Winter of Contributing",
-    "duration": "Aug 2021 - Nov 2021 ",
-    "responsibilities": [
-      "GWOC'21 in Web development domain."
-    ]
-  },
+
  {
     "position": "Core Team Member",
     "company": "CodeIN Community",
@@ -115,47 +172,7 @@ const data = [
       "Active core team member in the tech team."
     ]
   },
-{
-    "position": "Coding Team Lead",
-    "company": "Idea and Innovation Cell, VSSUT, Burla",
-    "duration": "Apr 2023 - Dec 2023",
-    "responsibilities": [
-      "Managed and handled different coding projects and web app development."
-    ],
-    "oldposition": "Core Technical Team Member",
-    "oldduration": "Jul 2022 - Jul 2023 ",
-    "oldresponsibilities": [
-      "Worked as a Core Technical Team Member in CS-Electronics domain.",
-      "Helped in development of the overall official IIC website."
-    ],
-    "oldposition1": "Technical Team Member",
-    "oldduration1": "May 2021 - Jul 2022 ",
-    "oldresponsibilities1": [
-      "Core Tech Team Member."
-    ]
-  },{
-    "position": "Core Techno-Management Member",
-    "oldposition": "Community Member",
-    "company": "GDG Cloud Bhubaneswar",
-    "duration": "Jul 2023 - Present",
-    "oldduration": "Nov 2021 - Jul 2023",
-    "responsibilities": [
-      "Developed GDG BBSR Website and Devfest 2023 website.",
-      "Serving as a Core Management Member.",
-      "Full Stack Web Developer for GDG BBSR events."
-    ],
-    "oldresponsibilities": [
-      "Active community member.",
-      "Participated in all GDG events."
-    ]
-  }, {
-    "position": "Community Member",
-    "company": "Google Developer Student Clubs - VSSUT, Burla",
-    "duration": "Dec 2020 - Jul 2023",
-    "responsibilities": [
-      "Active community member in Developer Students Club VSSUT, Burla."
-    ]
-  },  {
+   {
     "position": "Core Technical Team Member",
     "oldposition": "Social Media and Outreach Lead",
     "company": "SANINS",
@@ -175,16 +192,7 @@ const data = [
     "responsibilities": [
       "Role of Quizzer and Web Developer at Quizzine-VSSUT."
     ]
-  }, {
-    "position": "Core Technical Team Member",
-    "company": "ISRO VSSUT Space Innovation Centre",
-    "duration": "Aug 2022 - Dec 2023 ",
-    "responsibilities": [
-      "Worked in core electronics team and aviation.",
-      "Handled the website of VSSSIC using MERN stack.",
-      "Worked on Integration of software with IoT."
-    ]
-  },
+  }, 
     {
     "position": "Campus Mantri",
     "company": "GeeksforGeeks",

@@ -112,7 +112,7 @@ I'm Rudramadhaba Mishra, a final-year BTech student majoring in Electronics and 
         </motion.div>
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
         <motion.div variants={typographyVariants}>
-        <a href='/Resume.pdf' download> <Button variant="outlined" sx={{ border: "1px solid #ff8a56 !important", borderRadius: "5px", textTransform: "none", color: "#fff" }}>View Portfolio</Button></a>
+        <a href='/Resume.pdf' download> <Button variant="outlined" sx={{ border: "1px solid #ff8a56 !important", borderRadius: "5px", textTransform: "none", color: "#fff" }}>View Resume</Button></a>
         </motion.div>
         </motion.div>
       </Stack>

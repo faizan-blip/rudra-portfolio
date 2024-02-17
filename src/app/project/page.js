@@ -12,49 +12,14 @@ import { FaFigma } from "react-icons/fa";
  
 const Cloud = () => {
     const alldata = [
-      { heading: "Graduate Us", name: "Web Development", redirect: <GoArrowUpRight fontSize={35} />, img: `/gd.png` , link:"https://www.graduateus.com" ,tech: (
+      { heading: "Graduate Us", name: "Graduate Us", redirect: <GoArrowUpRight fontSize={35} />, img: `/gd.png` , link:"https://www.graduateus.com" ,tech: (
         <>
           <TbBrandNextjs fontSize={25} />
           <FaNodeJs fontSize={25} />
           <FaFigma fontSize={25} />
         </>
       ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
-      { heading: "FIRSTCARE", name: "Web Development", redirect: <GoArrowUpRight fontSize={35} />, img: `/first.png`, link:"https://firstcareshop.com/",tech: (
-        <>
-          <TbBrandNextjs fontSize={25} />
-          <FaNodeJs fontSize={25} />
-          <FaFigma fontSize={25} />
-        </>
-      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?" },
-      { heading: "0xgasless", name: "Web Development", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/ox.png` , link:"https://0xgasless.vercel.app/",tech: (
-        <>
-          <TbBrandNextjs fontSize={25} />
-          <FaNodeJs fontSize={25} />
-          <FaFigma fontSize={25} />
-        </>
-      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
-      { heading: "Pink Surfing", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/pink.png` , link:"https://pink-surfing-r2i4.vercel.app/",tech: (
-        <>
-          <TbBrandNextjs fontSize={25} />
-          <FaNodeJs fontSize={25} />
-          <FaFigma fontSize={25} />
-        </>
-      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
-      { heading: "Super kid", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg`, link:"https://superkid.co.in/",tech: (
-        <>
-          <TbBrandNextjs fontSize={25} />
-          <FaNodeJs fontSize={25} />
-          <FaFigma fontSize={25} />
-        </>
-      ), detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
-      { heading: "TaskLabs", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/bot.png`, link:"https://taskbot-platform-deploy.vercel.app/" ,tech: (
-        <>
-          <TbBrandNextjs fontSize={25} />
-          <FaNodeJs fontSize={25} />
-          <FaFigma fontSize={25} />
-        </>
-      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
-      { heading: "Amlajan", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/jolly.png`, link:"https://jolly-fermi-aa4a4f.netlify.app/" ,tech: (
+      { heading: "0xgasless", name: "0xgasless", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/ox.png` , link:"https://0xgasless.vercel.app/",tech: (
         <>
           <TbBrandNextjs fontSize={25} />
           <FaNodeJs fontSize={25} />
@@ -68,6 +33,36 @@ const Cloud = () => {
           <FaFigma fontSize={25} />
         </>
       ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "FIRSTCARE", name: "FIRSTCARE", redirect: <GoArrowUpRight fontSize={35} />, img: `/first.png`, link:"https://firstcareshop.com/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?" },
+      { heading: "Amlajan", name: "Crypto App design", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/jolly.png`, link:"https://jolly-fermi-aa4a4f.netlify.app/" ,tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "Pink Surfing", name: "Pink Surfing", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/pink.png` , link:"https://pink-surfing-r2i4.vercel.app/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ),detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+      { heading: "Super kid", name: "Super kid", redirect: <GoArrowUpRight  fontSize={35}/>, img: `/serviceposter.jpg`, link:"https://superkid.co.in/",tech: (
+        <>
+          <TbBrandNextjs fontSize={25} />
+          <FaNodeJs fontSize={25} />
+          <FaFigma fontSize={25} />
+        </>
+      ), detail:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda nesciunt nobis quos, voluptate, laborum nulla consequuntur doloribus a explicabo reiciendis culpa, ?"},
+     
+     
     ];
 
     
@@ -118,22 +113,14 @@ const Cloud = () => {
     }}>
       <Stack flexDirection='column' gap='0.1em'>
         <Typography sx={{ 
-          color: "transparent",
-          backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
-          backgroundClip: "text",
-          fontWeight: "700",
-          fontSize: "19px",
-          zIndex:"2"
+         color: "transparent",
+         backgroundImage: "linear-gradient(to right, #b16cea,#ff8a56)",
+         backgroundClip: "text",
+         fontWeight: "700",
+         fontSize: "19px",
+         zIndex:"2"
         }}>
           • {data.heading}
-        </Typography>
-        <Typography sx={{ 
-          color:"#d2d2d2",
-          fontWeight: "700",
-          fontSize: "16px",
-          zIndex:"2"
-        }}>
-          {data.name}
         </Typography>
       </Stack>
 <Fab className='hoveri' sx={{transform:"scale(0.5)" , background:"#fff !important"}}onClick={() => handleFabClick(id)}>{data.redirect}</Fab>

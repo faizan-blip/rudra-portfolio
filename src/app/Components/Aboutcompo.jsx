@@ -13,7 +13,7 @@ const Aboutcompo = () => {
     { name: "MIT", position: "Frontend Developer", year: "2017-2019" }
   ];
   const workdata = [
-    { name: "iServeU", position: "Software Development Engineer Intern", year: "Dec 2023 - June2024" },
+    { name: "iServeU", position: "Software Development Engineer Intern", year: "Dec 2023 - June 2024" },
     { name: "Param.ai", position: "Software Development Engineer Intern", year: "Nov 2023 - Dec 2023" },
     { name: "IG Drones", position: "Software Development Engineer Intern", year: "April 2023 - July 2023" }
   ];
@@ -29,18 +29,17 @@ const Aboutcompo = () => {
     visible: { opacity: 1, transition: { delay: 2 } },
   };
   const compnydata = [
-   
+    { name:"/javascript.svg" },
+    { name:"/react.svg" },
     { name:"/nextjs.svg" },
     { name:"/nodejs.svg" },
     { name:"/expresss.svg" },
-    { name:"/react.svg" },
-    { name:"/javascript.svg" },
-    { name:"/kubernate.svg" },
     { name:"/docker.svg" },
+    { name:"/kubernate.svg" },
+    { name:"/istio.jpeg" },
+    { name:"/ama.svg" },
     { name:"/gcp.svg" },
    
-    { name:"/ama.svg" },
-    { name:"/istio.jpeg" }
   ];
   const route = useRouter()
   return (
@@ -89,7 +88,24 @@ const Aboutcompo = () => {
             >
              Work <span style={{  fontWeight:"700"}}>Experience</span>
             </Typography>
-            <Stack 
+          </motion.div>
+          <Stack flexDirection='column' gap='1em' width='100%'>
+            {workdata.map((data, id) => (
+              <motion.div key={id} initial="hidden" animate="visible" variants={fadeInLeft}>
+                <Stack className="border" flexDirection='column' width={{sm:"100%" , xs:"auto"}} borderColor='#fff' height='auto' sx={{ border:"1px solid #1e1e1e" }} padding='1em 1em' borderRadius='10px'>
+                  <Typography color='#f5f5f5' fontWeight='700' fontSize='20px'>{data.name}</Typography>
+                  <Stack flexDirection='row' justifyContent='space-between'>
+                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>{data.position}</Typography>
+                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● {data.year}</Typography>
+                  </Stack>
+                  
+                </Stack>
+              </motion.div>
+            ))}
+                        <Stack 
+                        marginTop='0.7em'
+                        alignSelf={{md:"flex-end" , xs:"center"}}
+                        marginRight={{md:"3.1em" , xs:"-4.5em"}}
   position='relative' 
   width='4em' 
   padding='2em 0.5em' 
@@ -115,20 +131,6 @@ const Aboutcompo = () => {
     View More <HiOutlineArrowNarrowRight fontSize='20'/>
   </Typography>
 </Stack>
-
-          </motion.div>
-          <Stack flexDirection='column' gap='1em' width='100%'>
-            {workdata.map((data, id) => (
-              <motion.div key={id} initial="hidden" animate="visible" variants={fadeInLeft}>
-                <Stack className="border" flexDirection='column' width={{sm:"100%" , xs:"auto"}} borderColor='#fff' height='auto' sx={{ border:"1px solid #1e1e1e" }} padding='1em 1em' borderRadius='10px'>
-                  <Typography color='#f5f5f5' fontWeight='700' fontSize='20px'>{data.name}</Typography>
-                  <Stack flexDirection='row' justifyContent='space-between'>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>{data.position}</Typography>
-                    <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● {data.year}</Typography>
-                  </Stack>
-                </Stack>
-              </motion.div>
-            ))}
           </Stack>
         </Stack>
         <Stack flexDirection='column' alignItems='center' gap='2em'>
