@@ -62,7 +62,7 @@ const Aboutcompo = () => {
            <Stack  width={{lg:"60%" , md:"70%" , sm:"80%" , xs:"auto"}}  className="border" flexDirection='column' borderColor='#fff' height='100%' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding={{sm:"1em 1em" , xs:"0.5em 0.5em"}} borderRadius='10px' gap='0.2em'>
      <Box component='img' src="/vssut.jpg" sx={{width:"100%", height:{sm:"350px" , xs:"100%"}, borderRadius:"7px"}}/>
      <Typography color='#f5f5f5' fontWeight='700' fontSize='17px' marginTop='1em'>Veer Surendra Sai University Of Technology-(Burla,India)</Typography>
-                  <Stack flexDirection='row' justifyContent='space-between'>
+                  <Stack flexDirection={{sm:"row" , xs:"column"}} gap={{sm:"0" ,xs:"0.1em"}} justifyContent='space-between' >
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>BTech in Electronics and Telecommunication Engineering</Typography>
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2020-2024</Typography>
                   </Stack>
@@ -71,7 +71,7 @@ const Aboutcompo = () => {
            <Stack  width={{lg:"60%" , md:"70%" , sm:"80%" , xs:"auto"}}  className="border" flexDirection='column' borderColor='#fff' height='100%' sx={{ border:"1px solid rgba(255, 255, 255, 0.125)" , backdropFilter:"blur(16px) saturate(180%)" , background:"rgba(30, 30, 30, 0.75)"}} padding={{sm:"1em 1em" , xs:"0.5em 0.5em"}} borderRadius='10px' gap='0.2em'>
      <Box component='img' src="/bjem.jpg" sx={{width:"100%", height:{sm:"350px" , xs:"300px"}, borderRadius:"7px"}}/>
      <Typography color='#f5f5f5' fontWeight='700' fontSize='17px' marginTop='1em'>Buxi Jagabandhu English Medium School-(Bhubaneswar, India)</Typography>
-                  <Stack flexDirection='row' justifyContent='space-between'>
+                  <Stack flexDirection={{sm:"row" , xs:"column"}} gap={{sm:"0" ,xs:"0.1em"}} justifyContent='space-between' >
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>Intermediate Education in Science</Typography>
                     <Typography color='#d2d2d2' fontWeight='400' fontSize='14px'>● 2020-2024</Typography>
                   </Stack>
