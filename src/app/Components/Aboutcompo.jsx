@@ -36,7 +36,7 @@ const Aboutcompo = () => {
     { name:"/react.svg" },
     { name:"/javascript.svg" },
     { name:"/kubernate.svg" },
-    { name:"/Docker.svg" },
+    { name:"/docker.svg" },
     { name:"/gcp.svg" },
    
     { name:"/ama.svg" },
