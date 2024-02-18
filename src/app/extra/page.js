@@ -108,6 +108,16 @@ const data = [
       "Worked on Integration of software with IoT."
     ]
   },
+   
+  {
+    "position": "Core Team Member and Mentor",
+    "company": "SATT - Startup Accelerator Think Tank",
+    "duration": "Feb 2023 - Dec 2023 ",
+    "responsibilities": [
+      "Worked as a core team member and mentored new budding startups."
+    ]
+  },
+ 
   {
     "position": "Campus Ambassador",
     "company": "Belong Education",

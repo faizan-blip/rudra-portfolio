@@ -29,16 +29,7 @@ const Experience = () => {
             "Tech Stack: Nuxt.js (Frontend)"
           ]
         },
-       
-        {
-          "position": "Core Team Member and Mentor",
-          "company": "SATT - Startup Accelerator Think Tank",
-          "duration": "Feb 2023 - Dec 2023 ",
-          "responsibilities": [
-            "Worked as a core team member and mentored new budding startups."
-          ]
-        },
-       
+      
         {
           "position": "Software Development Intern",
           "company": "Ostello AI",
@@ -157,7 +148,7 @@ const Experience = () => {
         },
         {
           "position": "Software Development Intern",
-          "company": "Briefly™#",
+          "company": "Briefly™",
           "duration": "May 2022 - Jul 2022",
           "responsibilities": [
             "Developed the Briefly Products from scratch using ReactJS and NodeJS.",
