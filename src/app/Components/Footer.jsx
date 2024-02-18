@@ -69,8 +69,7 @@ const Footer = () => {
               backgroundClip: "text"}}> Connect.</span></Typography>
               <CiCircleChevRight fontSize='62' color="#fff"/>
               </Stack>
-         <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"20px",md:"19px" , sm:"18px" , xs:"16px"}} width={{sm:"70%" , xs:"90%"}}>I'm Always Open To Discussing Product
-design work or partnerships.</Typography>
+         <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"20px",md:"19px" , sm:"18px" , xs:"16px"}} width={{sm:"70%" , xs:"90%"}}>I'm always open to discuss anything about tech or getting hired.</Typography>
                </Stack>
                <Stack flexDirection='column' gap='1.5em' width={{md:"50%" , xs:"100%"}} >
                <TextField

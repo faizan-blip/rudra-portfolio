@@ -64,6 +64,9 @@ const Index = () => {
   const link3 = ()=>{
     window.open('https://github.com/RUDRAMADHABA', '_blank');
 }
+const link4 = ()=>{
+  window.open('https://topmate.io/rudramadhaba_mishra', '_blank');
+}
 
     return (  
         <>
@@ -95,9 +98,8 @@ const Index = () => {
       {/* Additional elements with animations */}
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <motion.div variants={typographyVariants}>
-        <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"15px" , xs:"14px"}}width="90%">
-        Hey everyone,
-I'm Rudramadhaba Mishra, a final-year BTech student majoring in Electronics and Telecommunication Engineering. I've interned as an SDE at multiple startups, actively contribute to open source and web development projects. I served as a Technical Team Member for Microsoft Learn Student Ambassador-SANINS and Idea Innovation Cell. As a founding member of GeeksforGeeks-Vssut chapter, I was a GFG campus ambassador for 2021-22. Looking for full-time software development opportunities in 2024.
+        <Typography color='#d2d2d2' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"15px" , xs:"14px"}}width={{md:"85%" , xs:"100%"}}>
+        Hey everyone, I'm Rudramadhaba Mishra, I am currently working as a SDE Intern at iServeU. i have done my BTech majoring in Electronics and Telecommunication Engineering. I've interned as an SDE at multiple startups before, have actively contributed to open source and web development projects. I served as a Technical Team Member for Microsoft Learn Student Ambassador-SANINS and Idea Innovation Cell. As a founding member of GeeksforGeeks-Vssut chapter, I was a GFG campus ambassador for 2021-22. I am Looking for full-time software development opportunities to join !
         </Typography>
       </motion.div>
 </motion.div>
@@ -119,7 +121,7 @@ I'm Rudramadhaba Mishra, a final-year BTech student majoring in Electronics and 
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <Stack flexDirection='column' alignSelf='start' marginTop='0.5em'>
         <motion.div variants={typographyVariants}>
-          <Typography color='#fff' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"16px" , xs:"16px"}}>Follow Me:</Typography>
+          <Typography color='#fff' fontWeight='400' fontSize={{lg:"18px",md:"17px" , sm:"16px" , xs:"16px"}}>Socials links:</Typography>
         </motion.div>
         <motion.div variants={containerVariants}>
           <Stack flexDirection='row' marginTop='0.5em' gap='0.5em' alignItems='start'>
@@ -131,6 +133,9 @@ I'm Rudramadhaba Mishra, a final-year BTech student majoring in Electronics and 
             </motion.div>
             <motion.div variants={typographyVariants}>
               <Fab onClick={()=> link3()} sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><FaGithub size={30}/></Fab>
+            </motion.div>
+            <motion.div variants={typographyVariants}>
+              <Fab onClick={()=> link4()} sx={{ transform: "Scale(0.7)", background: "linear-gradient(to right, #ffa84b, #ff8a56, #b16cea) !important" }}><Box component='img' src="/topmate.png" sx={{width:"80%" , mixBlendMode:"color-dodge"}}/></Fab>
             </motion.div>
           </Stack>
         </motion.div>

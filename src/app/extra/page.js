@@ -193,6 +193,26 @@ const data = [
       "Role of Quizzer and Web Developer at Quizzine-VSSUT."
     ]
   }, 
+  {
+    "position": "Web Developer",
+    "company": "Eduhub Community",
+    "duration": "Sep 2021 - May 2022",
+    "responsibilities": [
+      "AWS Educate Student."
+    ],
+    "oldposition": "Campus Leader",
+  
+    "oldduration": "Aug 2021 - Jan 2022",
+    "oldresponsibilities": [
+      "Campus Leader for VSSUT, Burla."
+    ],
+    "oldposition1": "Technical Team Member",
+    "oldduration1": "Jul 2021 - May 2022 ",
+    "oldresponsibilities1": [
+      "Technical Team Member of Eduhub Community."
+    ]
+  },
+ 
     {
     "position": "Campus Mantri",
     "company": "GeeksforGeeks",

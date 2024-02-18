@@ -109,9 +109,7 @@ const About = () => {
                     width={{sm:"80%" , xs:"100%"}}
                   >
                   
-Hello everyone,
-
-I'm Rudramadhaba Mishra, a final-year BTech student in Electronics and Telecommunication Engineering at Veer Surendra Sai University of Technology, Burla. I have internship experience as an SDE in multiple startups and communities. Passionate about open source and web development, I've been a Technical Team Member of the Web Development domain in the Microsoft Learn Student Ambassador-SANINS community and Idea Innovation Cell. I'm a founding and core team member of GeeksforGeeks-Vssut chapter, also serving as a GFG campus ambassador for 2021-22. Currently seeking full-time opportunities in Software Development for 2024.
+                  Hey everyone, I'm Rudramadhaba Mishra, I am currently working as a SDE Intern at iServeU. i have done my BTech majoring in Electronics and Telecommunication Engineering. I've interned as an SDE at multiple startups before, have actively contributed to open source and web development projects. I served as a Technical Team Member for Microsoft Learn Student Ambassador-SANINS and Idea Innovation Cell. As a founding member of GeeksforGeeks-Vssut chapter, I was a GFG campus ambassador for 2021-22. I am Looking for full-time software development opportunities to join !
                   </Typography>
                 </motion.div>
               )}
@@ -236,10 +234,10 @@ I'm Rudramadhaba Mishra, a final-year BTech student in Electronics and Telecommu
             borderRadius: "5px",
             gap: "0.3em",
             textTransform: "none",
-            width: "11em",
+            width: "14em",
           }}
         >
-          Download CV <ArticleIcon color="#fff" />
+          Download Resume <ArticleIcon color="#fff" />
         </Button></a>
       </motion.div>
     )}
